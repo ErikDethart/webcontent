@@ -14,5 +14,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: Enter www.3rik.dev directory
+      run: cd www.3rik.dev
     - name: Build the Docker image
-      run: docker build ./www.3rik.dev --file Dockerfile --tag www.3rik.dev:$(date +%s)
+      run: docker build . --file Dockerfile --tag www.3rik.dev:$(date +%s)
