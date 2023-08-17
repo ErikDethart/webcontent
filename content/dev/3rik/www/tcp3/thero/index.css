@@ -1,0 +1,56 @@
+html, body {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #2F3136;
+    color: antiquewhite;
+    font-size: 14pt;
+    overflow-x: hidden;
+    margin-top: 16px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    width: 100%;
+    max-width: 1000px;
+    padding: 12px;
+    margin: auto;
+    line-height: 1.3em;
+}
+
+main p {
+    margin-inline: 32px;
+    margin-top: 0px;
+}
+
+main p::before {
+    content: "☆═══════☆════════☆";
+    display: block;
+    font-size: 1.5em;
+    margin-block: 0.83em;
+    margin-inline: -24px;
+    font-weight: bold;
+}
+
+
+
+a {
+    color: aquamarine;
+}
+
+.safe {
+    color: #77dd77;
+}
+
+.unsafe {
+    color: #ff6961;
+}
